@@ -1,0 +1,31 @@
+$layout_screen_1400: 1400px;
+$layout_screen_1000: 1000px;
+$layout_screen_480: 480px;
+$layout_screen_767: 767px;
+$color_bg_1: #333333;
+$color_bg_2: #fff9;
+$color_bg_3: #aaaa;
+$color_bg_4: #fcbdc8;
+$color_bg_5: #c40023;
+$color_bg_6: #d6002a;
+$color_bg_7: #0005;
+$color_bg_8: #e6e6e6;
+$color_bg_9: #fefb9a;
+
+$color_black: black;
+$color_white: white;
+$color_red: red;
+$color_1: #c40023;
+$color_2: #720000;
+$color_3: #808080;
+$color_4: #666666;
+$color_5: rgba(214,0,42, 0.8);
+$color_6: #000a;
+$color_7: #111;
+
+@font-face {
+    font-family: horizon;
+    src: url(fonts/HorizonRounded.otf);
+}
+
+$font_horizon: 'horizon';

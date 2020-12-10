@@ -1,0 +1,31 @@
+@font-face {
+  font-family: horizon;
+  src: url(fonts/HorizonRounded.otf);
+}
+body {
+  background-image: url("../img/bg-user.jpg");
+  background-size: cover;
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
+
+.ranking-title h2 {
+  font-family: "horizon";
+  font-size: 4.5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ranking {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 6vw;
+  }
+}
+
+/*# sourceMappingURL=ranking.css.map */

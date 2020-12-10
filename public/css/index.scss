@@ -1,0 +1,378 @@
+@import 'variable';
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: block;
+	background-image: radial-gradient($color_white, $color_bg_1);
+  font-family: $font_horizon !important;
+  overflow-x:hidden;
+}
+
+.bar-item {
+  color: $color_white !important;
+  display: inline;
+  &:hover{
+    color: $color_1 !important;
+  }
+}
+
+.navbar-collapse .show{
+  z-index: 0;
+}
+.nav-link{
+  font-size: 2.5vh;
+  font-weight: normal;
+  float: right !important;
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+
+.navbar{
+  background-color: $color_bg_7 !important;
+}
+
+#id-warehouse{
+  width: 80vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page-top-area {
+	height: 28vh;
+	position: relative;
+  background-image: url("/static/img/divWarehouse.jpg");
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 0;
+
+  &:after{
+    position:absolute;
+  	width: 100vw;
+  	height: 100vh;
+  	left: 0;
+  	top: 0;
+  	background: $color_black;
+  	opacity: 0.7;
+  }
+}
+
+.logo-nav{
+  padding: 1vh 2vw 1vh 2vw;
+  background: $color_bg_7;
+  width: 100vh;
+  align-items: center;
+}
+
+.site-logo {
+	color: $color_white;
+  align-items: center;
+  width: 100vh;
+  max-width: 15vh;
+  height: auto;
+}
+
+.main-menu {
+  align-items: center;
+	float: right;
+  display: inline;
+
+    .nav-link {
+      display: inline;
+      font-size: 3vw;
+      text-align: right;
+      padding: 0px 10px 0px 0px !important;
+      color: $color_white !important;
+      display: inline;
+      &:hover{
+        color: $color_1 !important;
+      }
+
+    }
+
+}
+
+.fa {
+  display: inline;
+}
+.row{
+    margin: 0 !important;
+}
+.bar{
+  padding-top: 1vh;
+  padding-bottom:1vh;
+  width: 100vw;
+  background: $color_black;
+
+  .bar-item{
+    font-size: 2vw;
+  	font-family: $font_horizon;
+  	border: none;
+  	color: $color_white;
+  	text-align: center;
+    position: relative;
+    padding-right: 1vw;
+    padding-left: 1vw;
+		width: 1/5 * 100vw;
+    float: left;
+
+    &:hover{
+      color: $color_1;
+    	text-decoration: none;
+    }
+  }
+}
+
+.stock-table{
+  background: $color_bg_2;
+  align-items: center;
+  width: 65vw;
+  padding: 2vh 2vw 2vh 2vw;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+h2 {
+	font-size: 4vw;
+  color: $color_2 !important;
+	margin: 0;
+	font-weight: bold;
+	font-family: $font_horizon;
+}
+
+input:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+img {
+	max-width: 100vw;
+}
+
+.container-login100-form-btn {
+  width: 100vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2vh;
+}
+
+.login100-form-btn {
+  text-align: center;
+	align-items: center;
+  font-size: 5vh;
+  padding: 1vh 2vw;
+  line-height: 1.5;
+  color: $color_white;
+  text-transform: uppercase;
+  width: 50%;
+  border-radius: 25px;
+  background: $color_bg_5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+  background: $color_bg_1;
+}
+
+.wrap-input100 {
+	align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input100 {
+  margin: 0px !important;
+	align-items: center;
+  font-size: 3vh;
+  line-height: 1.5;
+  color: $color_4;
+  display: block;
+  width: 100%;
+  background:$color_bg_8;
+  border-radius: 25px;
+  padding: 1vh 30px 1vh 68px;
+	align-items: center;
+}
+
+.input100:focus + .focus-input100 {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+  }
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color: $color_1;
+}
+
+.focus-input100 {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(214,0,42, 0.8);
+}
+
+.symbol-input100 {
+  font-size: 2vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: $color_4;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.box-login input{
+	margin: 2%;
+}
+
+.box-login{
+	background: $color_bg_2;
+	align-items: center;
+	width: 60%;
+	padding: 3%;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+
+.input100.stock, .login100-form-btn.stock{
+  height: 5%;
+}
+
+span{
+  padding-left: 15px;
+}
+
+@media (max-width: $layout_screen_1400) {
+  .stock-table{
+    width:70vw;
+  }
+  .page-top-area {
+  	height: 20vw;
+  }
+  .box-login .input100, .box-login .symbol-input100, .box-login .login100-form-btn  {
+    height: 3vw;
+    font-size: 2vw;
+  }
+  .box-login .login100-form-btn {
+      height: 3vw;
+  }
+}
+
+
+@media (max-width: $layout_screen_1000) {
+  .page-top-area {
+  	height: 20vh;
+  }
+  .box-login .input100, .box-login .symbol-input100, .box-login .login100-form-btn  {
+    height: 4vw;
+    font-size: 2.5vw;
+  }
+  .box-login .login100-form-btn {
+      height: 4vw;
+  }
+  .type-description{
+    display:none;
+  }
+
+  .stock-table{
+    width:80vw;
+    padding-top: 1vh;
+  }
+
+  .nav-link{
+    padding-top: 0px !important;
+  }
+
+  .bar-item{
+    font-size: 4vw !important;
+  }
+
+}
+
+@media (max-width: $layout_screen_480) {
+  .stock-table{
+    width:80vw;
+  }
+  .nav-link {
+    font-size: 5.5vw;
+
+  }
+  .page-top-area {
+  	height: 25vh;
+  }
+
+  .bar-item{
+    font-size: 5vw !important;
+  }
+  .box-login .input100, .box-login .symbol-input100 , .box-login .login100-form-btn {
+    height: 7vw;
+    font-size: 4vw;
+  }
+
+  .box-login .login100-form-btn {
+      height: 9vw;
+  }
+
+  .nav-link{
+    font-size: 2vh !important;
+    a{
+      padding-bottom: 0px !important;
+    }
+  }
+
+}

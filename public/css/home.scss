@@ -1,0 +1,80 @@
+@import 'variable';
+
+body{
+  background-image: url("../img/bg_login.jpg");
+  background-size: cover;
+}
+.home-div{
+  font-family: $font_horizon;
+  background: $color_bg_2;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.logo-home{
+  width: 70vw;
+}
+
+h2{
+  font-size: 3vw;
+  color: $color_2 !important;
+	margin: 0;
+	font-weight: bold;
+	font-family: $font_horizon;
+}
+
+h3{
+  font-size: 2vw;
+  color: $color_2 !important;
+	margin: 0;
+	font-weight: bold;
+	font-family: $font_horizon;
+}
+
+.home-link{
+  font-size: 2vw;
+  color: $color_1;
+
+  &:hover{
+    font-weight: bold;
+    color: $color_white;
+    text-decoration: none;
+  }
+}
+
+.logo-home {
+  width: 100vw;
+  max-width: 15vw;
+  margin-bottom: 2%;
+  height: auto;
+}
+
+.fingerprint {
+  width: 100vw;
+  max-width: 10vw;
+  margin-bottom: 2%;
+  height: auto;
+}
+
+.bottle{
+  max-height: 30vw;
+  width: auto;
+}
+
+@media (max-width: $layout_screen_480) {
+  .logo-home {
+    max-width: 25vw;
+  }
+  h2{
+    font-size: 5vw;
+  }
+
+  h3{
+    font-size: 4vw;
+  }
+
+  .home-link{
+    font-size: 4vw;
+  }
+
+}

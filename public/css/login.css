@@ -1,0 +1,55 @@
+@font-face {
+  font-family: horizon;
+  src: url(fonts/HorizonRounded.otf);
+}
+body {
+  background-image: url("../img/bg_login.jpg");
+  background-size: cover;
+}
+
+.box-login {
+  background: #fff9;
+  align-items: center;
+  width: 60vw;
+  padding: 5vh 2vw;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+}
+.box-login div input {
+  margin: 1vh 1vw 1vh 1vw;
+}
+
+.login-error {
+  color: red;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media (max-width: 1400px) {
+  .box-login {
+    width: 70vw;
+    margin-bottom: 1vh;
+  }
+}
+@media (max-width: 480px) {
+  .box-login {
+    width: 95vw;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,55 @@
+@import 'variable';
+
+body{
+  background-image: url("../img/bg_login.jpg");
+	background-size: cover;
+}
+.box-login{
+	background: $color_bg_2;
+	align-items: center;
+	width: 60vw;
+	padding: 5vh 2vw;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top: 20vh;
+  div {
+    input{
+      margin: 1vh 1vw 1vh 1vw;
+    }
+  }
+
+}
+
+.login-error{
+  color: $color_red;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media (max-width: $layout_screen_1400) {
+	.box-login{
+		width: 70vw;
+		margin-bottom: 1vh;
+	}
+}
+
+
+@media (max-width: $layout_screen_480) {
+	.box-login{
+    width: 95vw;
+  }
+}
